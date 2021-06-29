@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Our.Umbraco.DynamicImages</id>
+    <version>1.0.0</version>
+    <title>Our.Umbraco.DynamicImages</title>
+    <authors>Paul Seal</authors>
+    <owners>Paul Seal</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/prjseal/Our.Umbraco.DynamicImages</projectUrl>
+    <iconUrl>https://github.com/prjseal/Our.Umbraco.DynamicImages/blob/master/images/logo.jpg?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library for creating dynamic images in Umbraco.</description>
+    <releaseNotes>
+      - first release
+    </releaseNotes>
+    <copyright>Copyright 2021</copyright>
+    <tags>Umbraco Image Dynamic Images DynamicImages Processor v8 package library Our.Umbraco.DynamicImages</tags>
+  </metadata>
+</package>

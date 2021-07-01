@@ -9,6 +9,8 @@ namespace Our.Umbraco.DynamicImages.Services
     public interface IDynamicImageService
     {
         TextLayer GetTextLayer(TextLayerSettings settings);
+        TextLayer GetTextLayer(string text, string colour, int fontSize, int x, int y, string fontFamily, bool dropShadow = false);
+        IEnumerable<TextLayer> GetTitleLayers(TextLayerSettings settings);
         ImageLayer GetImageLayer(ImageLayerSettings settings);
         IEnumerable<string> GetLines(string text, int maxLineLength = 30);
         IEnumerable<TextLayer> GetTextLayersFromLines(IEnumerable<string> lines, TextLayerSettings settings, int titleOffset);

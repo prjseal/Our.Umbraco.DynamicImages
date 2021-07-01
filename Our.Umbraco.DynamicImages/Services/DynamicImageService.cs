@@ -76,6 +76,8 @@ namespace Our.Umbraco.DynamicImages.Services
                 }
             }
 
+            imageLayer.Position = new Point(settings.XPosition, settings.YPosition);
+
             return imageLayer;
         }
 
@@ -247,11 +249,10 @@ namespace Our.Umbraco.DynamicImages.Services
         private ImageLayer GetAuthorImageLayer(ImageLayerSettings imageSettings)
         {
             var authorImage = GetImageLayer(imageSettings);
-            authorImage.Position = new Point(imageSettings.XPosition, imageSettings.YPosition);
             return authorImage;
         }
 
-        private IEnumerable<TextLayer> GetTitleLayers(TextLayerSettings settings)
+        public IEnumerable<TextLayer> GetTitleLayers(TextLayerSettings settings)
         {
             if (string.IsNullOrWhiteSpace(settings?.Text ?? "")) return Enumerable.Empty<TextLayer>();
 

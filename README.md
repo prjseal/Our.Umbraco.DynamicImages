@@ -3,7 +3,7 @@
 ![Nuget](https://img.shields.io/nuget/v/Our.Umbraco.DynamicImages)
 [![Nuget Downloads](https://img.shields.io/nuget/dt/Our.Umbraco.DynamicImages.svg)](https://www.nuget.org/packages/Our.Umbraco.DynamicImages)
 
-This package allows you to create dynamic images for the main purpose of giving you better looking social share images, a bit like the ones on GitHub.
+This package allows you to create dynamic images for the main purpose of giving you better looking social share images, a bit like the ones on GitHub. It uses ImageProcessor by James Jackson-South.
 
 Here is an example one genrated using the code below:
 

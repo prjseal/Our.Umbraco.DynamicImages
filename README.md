@@ -233,6 +233,26 @@ namespace CodeShare.Core.Composing
 }
 ```
 
+### Social Image
+
+In the code above, I am updating a media picker called `socialImage` on my article document type. I set that to the value of the udi returned from the dynamic image service after it has created the media item.
+
+### App Settings
+
+In the above example I referenced some app settings values. Here they are:
+
+```xml
+<add key="DynamicImageService:BackgroundImage" value="/img/skrift-background.png" />
+<add key="DynamicImageService:FontFamily" value="Microsoft Sans Serif" />
+<add key="DynamicImageService:AutoCreateImage" value="true" />
+<add key="DynamicImageService:ParentFolderId" value="2186" />
+```
+
+### updateSocialImage true/fale property
+
+You may also have noticed in the code that I am checking for and updating the value of a property with the alias `updateSocialImage`. This is just so that if I wanted to manually control whether to update the social image then I can set that to true before saving.
+
+
 ## Generate a image file from a controller action
 
 Here is an example controller which has a method to return an image as a file:

@@ -8,16 +8,16 @@ namespace Our.Umbraco.DynamicImages.Services
 {
     public interface IDynamicImageService
     {
+        byte[] GenerateImageAsBytes(DynamicImageSettings settings);
+        Udi GenerateImageAsMediaItem(DynamicImageSettings settings, int parentFolderId, string umbracoMediaAlias, string imageName);
+        DynamicImageSettings GetDefaultDynamicImageSettings(string FontFamily, string title, string authorName, string authorImagePath, DateTime postDate, string backgroundImagePath);
         TextLayer GetTextLayer(TextLayerSettings settings);
         TextLayer GetTextLayer(string text, string colour, int fontSize, int x, int y, string fontFamily, bool dropShadow = false);
         IEnumerable<TextLayer> GetTitleLayers(TextLayerSettings settings);
-        ImageLayer GetImageLayer(ImageLayerSettings settings);
-        IEnumerable<string> GetLines(string text, int maxLineLength = 30);
         IEnumerable<TextLayer> GetTextLayersFromLines(IEnumerable<string> lines, TextLayerSettings settings, int titleOffset);
-        Udi GenerateImageAsMediaItem(DynamicImageSettings settings, int parentFolderId, string umbracoMediaAlias);
-        byte[] GenerateImageAsBytes(DynamicImageSettings settings);
-        DynamicImageSettings GetDefaultDynamicImageSettings(string FontFamily, string title, string authorName, string authorImagePath, DateTime postDate, string backgroundImagePath);
-        IEnumerable<ImageLayer> GetAllImageLayers(DynamicImageSettings settings);
         IEnumerable<TextLayer> GetAllTextLayers(DynamicImageSettings settings);
+        ImageLayer GetImageLayer(ImageLayerSettings settings);
+        IEnumerable<ImageLayer> GetAllImageLayers(DynamicImageSettings settings);
+        IEnumerable<string> GetLines(string text, int maxLineLength = 30);
     }
 }

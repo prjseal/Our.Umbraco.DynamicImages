@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Our.Umbraco.DynamicImages</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Our.Umbraco.DynamicImages</title>
     <authors>Paul Seal</authors>
     <owners>Paul Seal</owners>
@@ -12,6 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A library for creating dynamic images in Umbraco.</description>
     <releaseNotes>
+      - added image name as variable for generate image as media item method
+      - put dynamic image service code into regions
       - exposed more methods
       - fixed issue with not assigning image layer position
       - first release

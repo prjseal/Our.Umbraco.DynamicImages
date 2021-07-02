@@ -5,9 +5,15 @@
 
 This package allows you to create dynamic images for the main purpose of giving you better looking social share images, a bit like the ones on GitHub.
 
-Using this package you can generate the image and return the bytes of the image which can then be used to save as a image file or return as a response. 
+Here is an example one genrated using the code below:
+
+![Skrift Example Image](https://raw.githubusercontent.com/prjseal/Our.Umbraco.DynamicImages/master/images/skrift-example.png 'Skrift Example Image')
+
+Using this package you can generate the image and have it be saved as an Umbraco media item or you can get the bytes of the image and use that to save it as a file or serve it as a response in a handler etc.
 
 ## Register the dynamic image service using a composer
+
+To be able to use this package in your site, you first need to register the service
 
 ```cs
 using Our.Umbraco.DynamicImages.Services;

@@ -7,6 +7,12 @@ This package allows you to create dynamic images for the main purpose of giving 
 
 Here is an example one genrated using the code below:
 
+### Before 
+
+![Skrift Background](https://raw.githubusercontent.com/prjseal/Our.Umbraco.DynamicImages/master/images/skrift-background.png 'Skrift Background')
+
+### After
+
 ![Skrift Example Image](https://raw.githubusercontent.com/prjseal/Our.Umbraco.DynamicImages/master/images/skrift-example.png 'Skrift Example Image')
 
 Using this package you can generate the image and have it be saved as an Umbraco media item or you can get the bytes of the image and use that to save it as a file or serve it as a response in a handler etc.
